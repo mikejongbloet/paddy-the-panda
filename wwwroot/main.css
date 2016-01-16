@@ -1,0 +1,163 @@
+@import "reset.css";
+
+body {
+	background: #000 url(images/background.jpg) top left repeat-x;
+	margin: 0;
+	padding: 0;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+a img, object { border: 0; outline: 0; }
+
+#flashContainer { background: url(images/beforeloaded.jpg) no-repeat top left; padding-bottom: 6px; }
+
+#outerContainer {
+	width: 660px;
+	margin: 0px auto;
+}
+
+#container {
+	float: left;
+	margin: 90px 0 40px;
+}
+
+#head {
+	background: url(images/mainTop.png) top left no-repeat;
+	padding: 10px;
+	width: 640px;
+	height: 41px;
+	position: relative;
+}
+
+#head a.logo {
+	display: block;
+	position: absolute;
+	top: -65px;
+	left: 10px;
+	height: 0px;
+	padding-top: 160px;
+	width: 276px;
+	background: url(images/logo.png) bottom left no-repeat;
+	overflow: hidden;
+}
+
+#head #navigation {
+	float: right;
+	list-style-type: none;
+	margin: 12px 12px 0px 0px;
+}
+
+#head #navigation li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: inline;
+}
+
+#head #navigation a.about:hover,
+#head #navigation a.walkthrough:hover, 
+#head #navigation a.play:hover { background-position: 0 -17px; }
+
+#head #navigation a.play,
+#head #navigation a.about,
+#head #navigation a.walkthrough {
+	display: block;
+	overflow: hidden;
+	height: 0px;
+	padding-top: 17px;
+
+}
+
+#head #navigation a.play {
+	width: 59px;
+	background: url(images/playBtn.gif) top left no-repeat;
+}
+
+#head #navigation a.walkthrough {
+	width: 162px;
+	background: url(images/walkthroughBtn.gif) top left no-repeat;
+}
+
+#head #navigation a.about {
+	width: 80px;
+	background: url(images/aboutBtn.gif) top left no-repeat;
+}
+
+#content {
+	background: #fff url(images/mainBottom.gif) bottom left no-repeat;
+	padding: 40px 10px 0px;
+	width: 640px;
+	float: left;	
+}
+
+/* inner styles */
+
+.contentBox {
+	background: #bd9df8 url(images/innerBoxTop.gif) top left no-repeat;
+	padding-top: 10px;
+	float: left;
+	width: 640px;
+	margin-bottom: 10px;
+}
+
+.contentBox .inner {
+	background: #bd9df8 url(images/innerBoxBottom.gif) bottom left no-repeat;
+	padding: 0 10px 10px;
+	float: left;
+	width: 620px;
+}
+
+.walkthroughBox img { float: left; margin-right: 10px; }
+
+.walkthroughBox .top { float: left; width: 512px; }
+
+.walkthroughBox .top h2, .walkthroughBox .top h3 { padding: 0; font-size: 18px; line-height: 20px; }
+.walkthroughBox .top h2 { font-weight: bold; }
+
+.walkthroughBox .top a, .walkthroughBox .bottom a { 
+	color: #fff; 
+	text-transform: uppercase; 
+	float: right; 
+	font-weight: bold; 
+	font-size: 18px; 
+	text-decoration: none; 
+	line-height: 18px; 
+	background: transparent url(images/showArrow.gif) no-repeat scroll right -26px;
+	padding-right: 20px;
+}
+
+.walkthroughBox #open a, .walkthroughBox .bottom a{ 
+	background-position: right 3px;
+}
+
+.walkthroughBox .bottom { width: 620px; display: block; }
+
+.walkthroughBox .bottom ol {
+	list-style: decimal;
+	margin-bottom: 10px;
+}
+
+.walkthroughBox .bottom li {
+	margin-left: 28px;
+	margin-bottom: 3px;
+}
+
+.walkthroughBox .bottom img {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.walkthroughBox .bottom img.horizontalrule {
+	margin: 10px 0;
+}
+
+.horizontalrule { margin: 10px 0; }
+
+
+#about img { float: right; margin: 0 0 10px 10px; }
+
+
+
